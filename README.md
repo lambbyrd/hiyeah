@@ -34,6 +34,36 @@ Some core features available
 git clone https://github.com/nylo-core/nylo.git
 ```
 
+## Development Commands
+
+### Testing
+Run unit tests:
+```bash
+flutter test
+```
+
+### Test Coverage
+Run tests with detailed coverage reporting in the console:
+```bash
+dart test_coverage.dart [test_path]
+```
+
+Examples:
+- `dart test_coverage.dart` - Runs basic widget tests with coverage
+- `dart test_coverage.dart test/` - Runs all tests with coverage  
+- `dart test_coverage.dart test/unit/` - Runs only unit tests with coverage
+
+The coverage script provides:
+- Overall coverage summary (lines, functions, branches)
+- Per-file coverage details with visual indicators (✅⚠️❌)
+- Grade-based assessment (A-F)
+- HTML report generation in `coverage/html/`
+
+### Other Commands
+- `flutter analyze` - Run static analysis
+- `dart run flutter_launcher_icons` - Generate app icons
+- `flutter build apk` - Build Android APK
+
 ## Documentation
 View our [docs](https://nylo.dev/docs) and visit [nylo.dev](https://nylo.dev)
 

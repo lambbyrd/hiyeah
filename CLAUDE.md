@@ -32,6 +32,21 @@ flutter test
 ```
 Runs unit tests located in the `test/` directory.
 
+### Test Coverage
+```bash
+dart test_coverage.dart [test_path]
+```
+Runs tests with coverage and displays a detailed console report. Examples:
+- `dart test_coverage.dart` - Runs basic widget tests with coverage
+- `dart test_coverage.dart test/` - Runs all tests with coverage  
+- `dart test_coverage.dart test/unit/` - Runs only unit tests with coverage
+
+The script provides:
+- Overall coverage summary (lines, functions, branches)
+- Per-file coverage details with visual indicators
+- Grade-based assessment (A-F)
+- HTML report generation in `coverage/html/`
+
 ### Building
 ```bash
 flutter build apk          # Android APK
